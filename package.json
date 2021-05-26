@@ -6,9 +6,9 @@
     "Drum",
     "Machine"
   ],
+  "homepage": "https://dcubic.github.io/DrumMachine",
   "main": "src/index.js",
   "dependencies": {
-    "gh-pages": "^3.2.0",
     "react": "17.0.2",
     "react-bootstrap": "1.6.0",
     "react-dom": "17.0.2",
@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
